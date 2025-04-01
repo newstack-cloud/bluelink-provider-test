@@ -31,6 +31,8 @@ checksum:
   extra_files:
     - glob: 'celerity-registry-info.json'
       name_template: '{{ .ProjectName }}_{{ .Version }}_registry_info.json'
+    - glob: 'docs.json'
+      name_template: '{{ .ProjectName }}_{{ .Version }}_docs.json'
   name_template: '{{ .ProjectName }}_{{ .Version }}_SHA256SUMS'
   algorithm: sha256
 signs:
