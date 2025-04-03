@@ -36,7 +36,7 @@
     },
     "resources": [
         {
-            "type": "aws/lambda/function",
+            "type": "test/lambda/function",
             "label": "AWS Lambda Function",
             "summary": "A resource for managing an AWS Lambda function.",
             "description": "The resource type used to define a [Lambda function](https://docs.aws.amazon.com/lambda/latest/api/API_GetFunction.html) that is deployed to AWS.",
@@ -167,18 +167,18 @@
                 "idField": "arn"
             },
             "examples": [
-                "```yaml\nresources:\n  - type: aws/lambda/function\n    name: ProcessOrders\n    properties:\n      functionName: ProcessOrders\n```",
-                "```yaml\nresources:\n  - type: aws/lambda/function\n    name: ProcessOrders\n    properties:\n      functionName: ProcessOrders\n      arn: arn:aws:lambda:us-west-2:123456789012:function:ProcessOrders\n```",
+                "```yaml\nresources:\n  - type: test/lambda/function\n    name: ProcessOrders\n    properties:\n      functionName: ProcessOrders\n```",
+                "```yaml\nresources:\n  - type: test/lambda/function\n    name: ProcessOrders\n    properties:\n      functionName: ProcessOrders\n      arn: arn:aws:lambda:us-west-2:123456789012:function:ProcessOrders\n```",
                 "Some example with `inline code`."
             ],
             "canLinkTo": [
-                "aws/dynamodb/table",
-                "aws/s3/bucket",
-                "aws/sqs/queue"
+                "test/dynamodb/table",
+                "test/s3/bucket",
+                "test/sqs/queue"
             ]
         },
         {
-            "type": "aws/dynamodb/table",
+            "type": "test/dynamodb/table",
             "label": "AWS DynamoDB Table",
             "summary": "A resource for managing an AWS DynamoDB table.",
             "description": "The resource type used to define a DynamoDB table that is deployed to AWS.",
@@ -210,19 +210,19 @@
                 "idField": "arn"
             },
             "examples": [
-                "```yaml\nresources:\n  - type: aws/dynamodb/table\n    name: Orders\n    properties:\n      tableName: Orders\n```",
-                "```yaml\nresources:\n  - type: aws/dynamodb/table\n    name: Orders\n    properties:\n      tableName: Orders\n      arn: arn:aws:dynamodb:us-west-2:123456789012:table/Orders\n```"
+                "```yaml\nresources:\n  - type: test/dynamodb/table\n    name: Orders\n    properties:\n      tableName: Orders\n```",
+                "```yaml\nresources:\n  - type: test/dynamodb/table\n    name: Orders\n    properties:\n      tableName: Orders\n      arn: arn:aws:dynamodb:us-west-2:123456789012:table/Orders\n```"
             ],
             "canLinkTo": []
         }
     ],
     "links": [
         {
-            "type": "aws/lambda/function::aws/dynamodb/table",
+            "type": "test/lambda/function::test2/dynamodb/table",
             "summary": "Link a Lambda function to a DynamoDB table.",
             "description": "A link between an AWS Lambda function and an AWS DynamoDB table.",
             "annotationDefinitions": {
-                "aws/lambda/function::aws.lambda.dynamodb.accessType": {
+                "test/lambda/function::aws.lambda.dynamodb.accessType": {
                     "name": "aws.dynamodb.lambda.accessType",
                     "label": "Lambda Access Type",
                     "type": "string",
@@ -234,7 +234,7 @@
                     ],
                     "required": false
                 },
-                "aws/lambda/function::aws.lambda.dynamodb.accessTables": {
+                "test/lambda/function::aws.lambda.dynamodb.accessTables": {
                     "name": "aws.lambda.dynamodb.accessTables",
                     "label": "Access Tables",
                     "type": "string",
@@ -249,7 +249,7 @@
     ],
     "dataSources": [
         {
-            "type": "aws/lambda/function",
+            "type": "test/lambda/function",
             "label": "AWS Lambda Function",
             "summary": "An external data source for an AWS Lambda function.",
             "description": "An external data source that can be used to retrieve information about an AWS Lambda function.",
@@ -279,14 +279,14 @@
                 }
             },
             "examples": [
-                "```yaml\ndataSources:\n  - type: aws/lambda/function\n    name: ProcessOrders\n    properties:\n      functionName: ProcessOrders\n```",
-                "```yaml\ndataSources:\n  - type: aws/lambda/function\n    name: ProcessOrders\n    properties:\n      functionName: ProcessOrders\n      arn: arn:aws:lambda:us-west-2:123456789012:function:ProcessOrders\n```"
+                "```yaml\ndataSources:\n  - type: test/lambda/function\n    name: ProcessOrders\n    properties:\n      functionName: ProcessOrders\n```",
+                "```yaml\ndataSources:\n  - type: test/lambda/function\n    name: ProcessOrders\n    properties:\n      functionName: ProcessOrders\n      arn: arn:aws:lambda:us-west-2:123456789012:function:ProcessOrders\n```"
             ]
         }
     ],
     "customVarTypes": [
         {
-            "type": "aws/ec2/instanceType",
+            "type": "test/ec2/instanceType",
             "label": "Amazon EC2 Instance Type",
             "summary": "An Amazon EC2 instance type for a VM.",
             "description": "A custom variable type that represents an Amazon EC2 instance type for a virtual machine.",
@@ -309,8 +309,8 @@
                 }
             },
             "examples": [
-                "```yaml\nvariables:\n  - name: instanceType\n    type: aws/ec2/instanceType\n    value: t2.micro\n```",
-                "```yaml\nvariables:\n  - name: instanceType\n    type: aws/ec2/instanceType\n    value: t2.medium\n```"
+                "```yaml\nvariables:\n  - name: instanceType\n    type: test/ec2/instanceType\n    value: t2.micro\n```",
+                "```yaml\nvariables:\n  - name: instanceType\n    type: test/ec2/instanceType\n    value: t2.medium\n```"
             ]
         }
     ],

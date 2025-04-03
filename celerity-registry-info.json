@@ -1,3 +1,8 @@
 {
-    "supportedProtocols": ["1.0"]
+    "supportedProtocols": ["1.0"],
+    "ui": {
+        "referencedLinkPlugins": {
+            "test2": "two-hundred"
+        }
+    }
 }
