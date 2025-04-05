@@ -173,6 +173,7 @@
             ],
             "canLinkTo": [
                 "test/dynamodb/table",
+                "test2/dynamodb/table",
                 "test/s3/bucket",
                 "test/sqs/queue"
             ]
