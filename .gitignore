@@ -38,3 +38,5 @@ tmp
 
 # Virtual environment for python test harness.
 .venv
+
+bin
