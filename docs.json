@@ -1,9 +1,9 @@
 {
   "id": "two-hundred/test",
   "displayName": "AWS",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "protocolVersions": ["1.0"],
-  "description": "AWS provider for the Deploy Engine including resources, data sources, links and custom variable types for interacting with AWS services.",
+  "description": "AWS provider for the Deploy Engine including `resources`, `data sources`, `links` and `custom variable types` for interacting with AWS services.\n\n## AWS Authentication and Configuration\n\n### Environment Variables\n",
   "author": "Two Hundred Cloud Services Ltd",
   "repository": "https://github.com/two-hundred/celerity-provider-aws",
   "config": {
