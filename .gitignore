@@ -40,3 +40,6 @@ tmp
 .venv
 
 bin
+
+# Used to populate the description field in the docs.json file.
+description.md

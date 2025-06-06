@@ -5,14 +5,16 @@ go 1.23.4
 replace github.com/two-hundred/celerity/libs/plugin-framework => /Users/andresutherland/projects2023/celerity/libs/plugin-framework
 
 require (
-	github.com/two-hundred/celerity/libs/blueprint v0.5.0
+	github.com/two-hundred/celerity/libs/blueprint v0.15.0
 	github.com/two-hundred/celerity/libs/plugin-framework v0.0.0-20250413204551-6683bffb3b58
 )
 
 require (
+	github.com/coreos/go-json v0.0.0-20231102161613-e49c8866685a // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/matoous/go-nanoid/v2 v2.1.0 // indirect
 	github.com/spf13/afero v1.11.0 // indirect
+	github.com/tailscale/hujson v0.0.0-20250226034555-ec1d1c113d33 // indirect
 	github.com/two-hundred/celerity/libs/common v0.3.0 // indirect
 	go.uber.org/multierr v1.10.0 // indirect
 	go.uber.org/zap v1.27.0 // indirect
