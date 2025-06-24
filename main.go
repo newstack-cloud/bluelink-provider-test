@@ -5,11 +5,11 @@ import (
 	"fmt"
 	"log"
 
+	"github.com/newstack-cloud/bluelink-provider-test/providertest"
 	"github.com/newstack-cloud/bluelink/libs/plugin-framework/plugin"
 	"github.com/newstack-cloud/bluelink/libs/plugin-framework/pluginservicev1"
 	"github.com/newstack-cloud/bluelink/libs/plugin-framework/sdk/pluginutils"
 	"github.com/newstack-cloud/bluelink/libs/plugin-framework/sdk/providerv1"
-	"github.com/newstack-cloud/celerity-provider-test/providertest"
 )
 
 func main() {
