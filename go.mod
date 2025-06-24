@@ -2,16 +2,16 @@ module github.com/newstack-cloud/bluelink-provider-test
 
 go 1.23.4
 
-replace github.com/newstack-cloud/bluelink/libs/plugin-framework => /Users/andresutherland/projects2023/bluelink/libs/plugin-framework
-
 require (
 	github.com/newstack-cloud/bluelink/libs/blueprint v0.24.1
+	github.com/newstack-cloud/bluelink/libs/plugin-framework v0.0.0-20250624153400-b3cd906a01a8
 )
 
 require (
 	github.com/coreos/go-json v0.0.0-20231102161613-e49c8866685a // indirect
 	github.com/google/uuid v1.6.0 // indirect
 	github.com/matoous/go-nanoid/v2 v2.1.0 // indirect
+	github.com/newstack-cloud/bluelink/libs/common v0.3.2 // indirect
 	github.com/spf13/afero v1.11.0 // indirect
 	github.com/tailscale/hujson v0.0.0-20250226034555-ec1d1c113d33 // indirect
 	go.uber.org/multierr v1.10.0 // indirect
